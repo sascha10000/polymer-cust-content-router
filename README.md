@@ -1,6 +1,5 @@
 # sascha10k-content-router
-<sascha10k-content-router> is a "DOM-Loader" and router. By providing a javascript object, that defines files 
-and names for the routes, it enables you to build Single-Page-Applications in the easiest manner. 
+&lt;sascha10k-content-router&gt; is a "DOM-Importer" and very basic router. By providing a javascript object, that defines files and names for the routes, it enables you to build Single-Page-Applications in the easiest manner. 
 
 How to use:
 1. Create a global variable in javscript containing your routes.
