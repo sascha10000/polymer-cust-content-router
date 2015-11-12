@@ -11,7 +11,7 @@ bower install --save sascha10k-content-router
 
 #####Example:
 
-1. Define your routes.
+[1] Define your routes.
 ```javascript
 var myRoute = [
     {
@@ -26,7 +26,7 @@ var myRoute = [
 ```
 Filename: route.js
 
-2. Use the tag.
+[2] Use the tag.
 ```HTML
 <body>
     <head>
@@ -40,7 +40,7 @@ Filename: route.js
 </body>
 ```
 
-3. Create a file that the content-router is able to include.
+[3] Create a file that the content-router is able to include.
 ```HTML
 <template>
     This is my start page.
