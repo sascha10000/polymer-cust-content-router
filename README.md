@@ -1,6 +1,8 @@
 # sascha10k-content-router
 &lt;sascha10k-content-router&gt; is a "DOM-Importer" and very basic router. By providing a javascript object, that defines files and names for the routes, it enables you to build Single-Page-Applications in the easiest manner. 
 
+Installation with bower: bower install --save sascha10k-content-router
+
 How to use:
 1. Create a global variable in javscript containing your routes.
 2. Add the &lt;sascha10k-content-router&gt; tag where you want to display the content.
