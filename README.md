@@ -9,6 +9,7 @@ How to use:
 Example:
 
 First define your routes.
+'''javascript
     var myRoute = [{
         nameid: "start",
         file: "start.html"
@@ -17,4 +18,4 @@ First define your routes.
         nameid: "about",
         file: "about.html"
     }]
-    
+'''
