@@ -89,6 +89,8 @@
                 // sets all sections invisible except the selected one
                 if(!(route.nameid === this.selected))
                     section.style.display = 'none';
+                else
+                    section.style.display = 'initial';
                 
                 // appends the created element to  the file
                 section.appendChild(include);
