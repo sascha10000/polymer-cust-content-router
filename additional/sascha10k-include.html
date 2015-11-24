@@ -17,10 +17,17 @@ Polymer({
     properties: {
         srcfile: String,
         targetid: {
-            type:String,
+            type: String,
             value: ''
         },
-        append: String
+        appendtoparent: {
+            type: String,
+            value: 'false'
+        },
+        append: {
+            type: String,
+            value: 'true'
+        }
     },
     attached: function(){
         // adds the import for the given source file
@@ -28,7 +35,6 @@ Polymer({
         var targetid = this.targetid;
         var append = this.append;
         var that = this;
-        
         
         link.rel = 'import';
         link.href = this.srcfile;
@@ -42,6 +48,13 @@ Polymer({
                 target = Polymer.dom(that.root);
             else
                 target = document.querySelector('#'+targetid);
+            
+            if(targetid === '' && that.appendtoparent === 'true'){
+                var target = Polymer.dom(that).parentNode;
+            }
+            else if(targetid !== '' && that.appendtoparent === 'true'){
+                var target = Polymer.dom(that).parentNode.querySelector('#'+targetid);
+            }
             
             if(append == "false"){
                 while(target.firstChild){
